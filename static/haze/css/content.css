@@ -1,0 +1,44 @@
+.window {
+	border-radius: 25px 25px 25px 25px;
+	left: 200px;
+	position: absolute;
+	top: 75px;
+	width: 880px;
+	z-index: 1;
+	display: none;
+}
+
+.window h {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.window span {
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+#imageWindow .sampleImg {
+	width: 250px;
+	height: 180px;
+	position: absolute;
+	margin: 0px 5px 5px 0px;
+	z-index: 1;
+}
+
+#imageWindow .more {
+	text-decoration: none;
+	color: #000; 
+	cursor : pointer;
+	background: none repeat scroll 0 0 #CCCCCC;
+	height: 30px;
+	margin-top: 20px;
+	padding: 15px 0 0 70px;
+	position: absolute;
+	width: 150px;
+	cursor: pointer;
+}
+
+#imageWindow .more:hover {
+	background: none repeat scroll 0 0 #DBDBDB;
+}

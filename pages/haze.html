@@ -2,19 +2,54 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Hello Sea.js</title>
+<title>蓝天，白云</title>
 <script src="../lib/seajs/sea.js"></script>
+<link rel="stylesheet" href="../static/haze/css/main.css"
+	type="text/css" />
+<link rel="stylesheet" href="../static/haze/css/navi.css"
+	type="text/css" />
+<link rel="stylesheet" href="../static/haze/css/content.css"
+	type="text/css" />
+<script type="text/javascript">
+	// Set configuration
+	seajs.config({
+		base : "../",
+		alias : {
+			"jquery" : "lib/jquery/jquery-1.7.2.min.js",
+			"jquery.easing" : "lib/jquery/jquery.easing.1.3.js"
+		}
+	});
+	seajs.use("../js/haze/src/main");
+</script>
 </head>
 <body>
-	<script type="text/javascript">
-		// Set configuration
-		seajs.config({
-			base : "../",
-			alias : {
-				"jquery" : "lib/jquery/jquery-1.7.2.min.js"
-			}
-		});
-		seajs.use("../js/haze/src/main");
-	</script>
+	<div id="content">
+		<div class="navigation" id="navi">
+			<div class="item home" id="index">
+				<img src="../static/haze/img/bg_home.png" alt="" width="199"
+					height="199" class="circle" /> <a class="icon"></a> <br>
+				<h2>首页</h2>
+			</div>
+			<div class="item camera" id="image">
+				<img src="../static/haze/img/bg_camera.png" alt="" width="199"
+					height="199" class="circle" /> <a class="icon"></a>
+				<h2>图片</h2>
+			</div>
+			<div class="item fav" id="active">
+				<img src="../static/haze/img/bg_fav.png" alt="" width="199"
+					height="199" class="circle" /> <a class="icon"></a>
+				<h2>行动</h2>
+			</div>
+			<div class="item user" id="about">
+				<img src="../static/haze/img/bg_user.png" alt="" width="199"
+					height="199" class="circle" /> <a class="icon"></a>
+				<h2>关于</h2>
+			</div>
+		</div>
+		<div class="window" id="indexWindow"></div>
+		<div class="window" id="imageWindow"></div>
+		<div class="window" id="activeWindow"></div>
+		<div class="window" id="aboutWindow"></div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,122 @@
+.navigation {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 1.4px;
+	margin: 0 auto;
+}
+
+.navigation .item {
+	position: absolute;
+	cursor: pointer;
+}
+
+.home {
+	left: 100px;
+	top: 100px;
+}
+
+.camera {
+	left: 100px;
+	top: 200px;
+}
+
+.fav {
+	left: 100px;
+	top: 300px;
+}
+
+.user {
+	left: 100px;
+	top: 400px;
+}
+
+a.icon {
+	cursor: pointer;
+	height: 52px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 52px;
+}
+
+.user a.icon {
+	background: url("../img/user.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.home a.icon {
+	background: url("../img/home.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.shop a.icon {
+	background: url("../img/shop.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.camera a.icon {
+	background: url("../img/camera.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+
+.fav a.icon {
+	background: url("../img/fav.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.navigation .item a.active {
+	background-position: 0 -52px;
+}
+
+.item img.circle {
+	height: 52px;
+	left: 0;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	width: 52px;
+}
+
+.item h2 {
+	color: #222222;
+	font-size: 15px;
+	left: 0px;
+	line-height: 52px;
+	position: absolute;
+	text-indent: 10px;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	text-transform: uppercase;
+	top: 44px;
+	display: none;
+	width: 50px;
+}
+
+.item h2.active {
+	color: #FFFFFF;
+	text-shadow: 1px 0 1px #555555;
+}
+
+.item ul {
+	display: none;
+	left: 25px;
+	list-style: none outside none;
+	position: absolute;
+	top: 60px;
+}
+
+.item ul li a {
+	clear: both;
+	color: #222222;
+	float: left;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	padding: 3px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	text-transform: uppercase;
+	width: 100px;
+}
+
+.item ul li a:hover {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #666666;
+	color: #444444;
+}
