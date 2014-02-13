@@ -10,6 +10,16 @@ define(function(require, exports, module) {
 
 			content.append('<h>' + d.title + '</h>');
 			content.append('<br>');
+
+			content.append('<span>' + d.desc + '</span>');
+
+			content.append('<h>' + d.title2 + '</h><br>');
+
+			$.each(d.links, function(i, link) {
+						content.append('<br><a target="link+' + i + '" href="'
+								+ link.url + '">' + link.text + '</a><br>');
+					});
+
 			cw.setContent(content);
 
 			module.exports = cw;

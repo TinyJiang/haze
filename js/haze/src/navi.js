@@ -2,10 +2,6 @@
  * 导航栏
  */
 define(function(require, exports, module) {
-			// import lib
-			require('jquery');
-			require('jquery.easing');
-
 			// import components
 			var index = require('./content/index');
 			var image = require('./content/image');

@@ -3,8 +3,8 @@
  */
 define(function(require, exports, module) {
 			// import lib
-			require('jquery');
-			require('jquery.easing');
+			var $ = require('jquery');
+			require('jquery-easing');
 			var ContentWindow = function(contentWin) {
 				var setContent = function(content) {
 					contentWin.empty();

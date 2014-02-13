@@ -28,8 +28,8 @@
 
 #imageWindow .more {
 	text-decoration: none;
-	color: #000; 
-	cursor : pointer;
+	color: #000;
+	cursor: pointer;
 	background: none repeat scroll 0 0 #CCCCCC;
 	height: 30px;
 	margin-top: 20px;
@@ -41,4 +41,114 @@
 
 #imageWindow .more:hover {
 	background: none repeat scroll 0 0 #DBDBDB;
+}
+
+#activeWindow .gameBox {
+	opacity: 0.8;
+	height: 300px;
+	width: 820px;
+	background: #fff;
+	position: relative;
+	margin: 20px 0;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	margin: 20px 0; /* 老的 Firefox */
+}
+
+#activeWindow .gameBox .people {
+	margin: 10px 10px 0px 10px;
+	height: 280px;
+	width: 280px;
+	height: 280px;
+}
+
+#activeWindow .gameBox .dia2 {
+	margin-top: 90px;
+}
+
+#activeWindow .gameBox .optBox {
+	height: 70px;
+	width: 320px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+#activeWindow .button {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px
+		rgba(255, 255, 255, .44);
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+	display: inline-block;
+}
+
+#activeWindow .blue {
+	color: #19667d;
+	background: #70c9e3; /* Old browsers */
+	background: -moz-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #70c9e3),
+		color-stop(100%, #39a0be)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #70c9e3 0%, #39a0be 100%); /* W3C */
+}
+
+#activeWindow .blue:hover {
+	color: #FFF;
+}
+
+#activeWindow .big {
+	padding: 0 40px;
+	padding-top: 10px;
+	height: 30px;
+	width: 55px; text-transform : uppercase;
+	font: bold 20px/22px Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#activeWindow .msgBox {
+	position: absolute;
+	height: 46px;
+	width: 94px;
+}
+
+#activeWindow .pLeft {
+	left: 375px;
+	top: 20px;
+}
+
+#activeWindow .pRight {
+	left: 380px;
+	top: 105px;
+}
+
+.FL {
+	float: left;
+}
+
+.FR {
+	float: right;
 }
